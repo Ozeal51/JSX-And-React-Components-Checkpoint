@@ -1,0 +1,54 @@
+:root {
+  --bg-start: #0f172a;
+  --bg-end: #1e293b;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.18);
+}
+
+.app-bg {
+  background: radial-gradient(800px 400px at 10% 10%, #334155 0%, var(--bg-start) 40%), 
+              radial-gradient(800px 400px at 90% 90%, #0ea5e9 0%, var(--bg-end) 40%);
+  min-height: 100vh;
+}
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  color: #e2e8f0;
+}
+
+.image-wrapper {
+  max-height: 260px;
+  overflow: hidden;
+}
+.product-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.product-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.product-price {
+  font-weight: 600;
+}
+.product-price-badge {
+  background-color: rgba(14, 165, 233, 0.15) !important;
+  border: 1px solid rgba(14, 165, 233, 0.35);
+}
+
+.product-description {
+  color: #cbd5e1;
+  margin-bottom: 0;
+}
+
+.hello-text {
+  color: #e2e8f0;
+  text-align: center;
+}
